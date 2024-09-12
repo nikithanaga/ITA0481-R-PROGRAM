@@ -1,0 +1,9 @@
+matE<-matrix(0,nrow=3,ncol=3,byrow=TRUE)
+print(matE)
+rows<-row(matE)
+cols<-col(matE)
+print(rows)
+print(cols)
+n<-6
+m<-row(matrix(0,n,n))+col(matrix(0,n,n))
+print(m)

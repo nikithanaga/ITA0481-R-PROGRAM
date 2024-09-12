@@ -1,0 +1,10 @@
+data("ChickWeight")
+model <- lm(weight ~ Time + Diet, data=ChickWeight)
+summary(model)  
+new_data <- data.frame(Time=10, Diet=factor(1, levels = levels(ChickWeight$Diet)))
+predicted_weight <- predict(model, newdata=new_data)
+cat("Predicted weight for Time=10 and Diet=1:", predicted_weight, "\n")
+predicted_values <- predict(model, newdata=ChickWeight)
+residuals <- ChickWeight$weight - predicted_values
+mse <- mean(residuals^2)
+cat("Mean Squared Error (MSE):", mse, "\n")

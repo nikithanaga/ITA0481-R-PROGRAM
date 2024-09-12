@@ -1,0 +1,5 @@
+gender<-factor(c("male","female","female","male","female"))
+print(gender)
+print(levels(gender))
+is_factor_gender<-is.factor(gender)
+print(is_factor_gender)

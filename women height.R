@@ -1,0 +1,5 @@
+data("women")
+head(women)
+height_factor <- factor(women$height)
+print(height_factor)
+summary(height_factor)

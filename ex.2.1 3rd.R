@@ -1,0 +1,13 @@
+n1<-25.2
+n2<-15
+n3<-16.44
+n4<-15.3
+n5<-18.6
+sum<-(n1+n2+n3+n4+n5)/5
+print(sum)
+avg<-sum/2
+print(avg)
+half_avg<-avg/2
+print(half_avg)
+n<-sqrt(avg)
+print(n)

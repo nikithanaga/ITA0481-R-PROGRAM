@@ -1,0 +1,6 @@
+set.seed(123)
+sample_letters <- sample(LETTERS, size = 20, replace = TRUE)
+factor_letters <- factor(sample_letters)
+factor_levels <- levels(factor_letters)
+five_levels <- head(factor_levels, 5)
+print(five_levels)

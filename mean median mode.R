@@ -1,0 +1,7 @@
+x<-c(1,2,2,3,6,7,3)
+mean<-mean(x)
+cat("mean:",mean,"\n")
+median<-median(x)
+cat("median:",median,"\n")
+mode<-names(which.max(table(x)))
+cat("mode:",mode,"\n")
